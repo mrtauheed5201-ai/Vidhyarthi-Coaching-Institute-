@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidhyarthi Coaching Institute | Etawah</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+    *{margin:0;padding:0;font-family:'Poppins',sans-serif;box-sizing:border-box;}
+    body{background:#f4f8fe;color:#222;}
+    header{
+        background:#003cff;
+        color:#fff;padding:25px 50px;
+        display:flex;justify-content:space-between;align-items:center;
+        position:sticky;top:0;z-index:100;
+        box-shadow:0 4px 15px rgba(0,0,0,.2);
+    }
+    header h1{font-size:28px;font-weight:700}
+    nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:500;transition:.3s}
+    nav a:hover{color:#ffe500}
+
+    section{padding:70px 10%;text-align:center;}
+
+    .hero{
+        background:url('https://i.ibb.co/TDH6hsN/classroom.jpg') center/cover no-repeat;
+        color:#fff;height:80vh;display:flex;
+        justify-content:center;align-items:center;flex-direction:column;
+        backdrop-filter:brightness(0.7);
+    }
+    .hero h2{font-size:46px;font-weight:800;text-shadow:2px 2px 10px #000;}
+    .hero p{font-size:20px;margin-top:12px;font-weight:400}
+    .btn{margin-top:25px;background:#ffe500;color:#000;padding:12px 28px;
+        font-size:18px;border:none;border-radius:7px;cursor:pointer;font-weight:600;border:2px solid #000}
+    .btn:hover{background:#fff;}
+
+    .features{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:40px;}
+    .card{
+        background:#fff;padding:25px;width:300px;border-radius:15px;
+        box-shadow:0 4px 15px rgba(0,0,0,.15);transition:.4s;
+    }
+    .card:hover{transform:scale(1.05)}
+
+    /* Contact Form */
+    form{width:400px;margin:auto;text-align:left;background:#fff;padding:30px;border-radius:12px;
+        box-shadow:0 4px 15px rgba(0,0,0,.15)}
+    input,textarea{
+        width:100%;padding:12px;margin:10px 0;border:2px solid #003cff;
+        border-radius:6px;font-size:16px;
+    }
+    button{background:#003cff;color:#fff;padding:12px;width:100%;font-size:18px;border:none;border-radius:6px;cursor:pointer;}
+    button:hover{background:#002db3;}
+
+    footer{background:#000;color:#fff;padding:20px;text-align:center;margin-top:60px;}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Vidhyarthi Coaching Institute</h1>
+    <nav>
+        <a href="#courses">Courses</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#admission">Admission Form</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Learn • Improve • Achieve</h2>
+    <p>Quality education for Classes 1st to 12th – All Subjects</p>
+    <a href="#admission"><button class="btn">Enroll Now</button></a>
+</section>
+
+<section id="courses">
+    <h1>📘 Courses We Offer</h1>
+    <div class="features">
+        <div class="card"><h3>Class 1st – 5th</h3><p>All subjects foundation</p></div>
+        <div class="card"><h3>Class 6th – 8th</h3><p>Science | Maths | English</p></div>
+        <div class="card"><h3>Class 9th – 10th</h3><p>Board level advanced coaching</p></div>
+        <div class="card"><h3>13th / Competition</h3><p>Reasoning, GK, English, Maths</p></div>
+    </div>
+</section>
+
+<section id="about">
+    <h1>🏫 Why Choose Us?</h1>
+    <p>
+        Experienced teachers • Regular tests • Doubt clearing sessions • Smart notes  
+        Discipline • Motivation • Result-oriented teaching
+    </p>
+</section>
+
+<section id="admission">
+    <h1>📝 Admission / Enquiry Form</h1>
+    <form action="https://formspree.io/f/xrbzgvqb" method="POST">
+        <label>Student Name</label>
+        <input type="text" name="name" required>
+
+        <label>Class</label>
+        <input type="text" name="class" required>
+
+        <label>Parent Contact Number</label>
+        <input type="tel" name="phone" required>
+
+        <label>Message / Query</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h1>📍 Contact & Location</h1>
+    <p><b>Address:</b> In front of RR restaurant, Bharthna Road, Gokuldham Colony, Etawah, Uttar Pradesh – 206001</p>
+    <p><b>Phone:</b> <a href="tel:8630123075">8630123075</a></p>
+    <p><b>Email:</b> <a href="mailto:mrtauheed5201@gmail.com">mrtauheed5201@gmail.com</a></p>
+</section>
+
+<footer>
+    © 2025 Vidhyarthi Coaching Institute | All Rights Reserved
+</footer>
+
+</body>
+</html>
